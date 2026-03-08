@@ -1,0 +1,6 @@
+jupyter-book>=1.0.0
+ase
+pymatgen
+numpy
+scipy
+matplotlib

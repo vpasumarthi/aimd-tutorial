@@ -1,0 +1,26 @@
+# Jupyter Book build
+_build/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VASP (large files)
+WAVECAR
+CHGCAR
+CHG
+vaspout.h5
+
+# Temporary
+*.tmp
+*.bak
