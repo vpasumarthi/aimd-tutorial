@@ -6,6 +6,9 @@ copyright: "2026"
 execute:
   execute_notebooks: "off"
 
+exclude_patterns:
+  - CLAUDE.md
+
 repository:
   url: https://github.com/vpasumarthi/aimd-tutorial
   branch: main

@@ -3,4 +3,7 @@ root: intro
 
 parts:
   - caption: Tutorials
-    chapters: []
+    chapters:
+      - file: notebooks/01_bulk_water
+      - file: notebooks/02_water_on_pt111
+      - file: notebooks/03_constrained_md
