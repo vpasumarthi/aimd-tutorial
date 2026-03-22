@@ -8,6 +8,7 @@ execute:
 
 exclude_patterns:
   - CLAUDE.md
+  - README.md
 
 repository:
   url: https://github.com/vpasumarthi/aimd-tutorial
