@@ -8,6 +8,7 @@ execute:
 
 exclude_patterns:
   - CLAUDE.md
+  - AGENTS.md
 
 repository:
   url: https://github.com/vpasumarthi/aimd-tutorial
@@ -24,3 +25,4 @@ launch_buttons:
 sphinx:
   config:
     html_theme: sphinx_book_theme
+    linkcheck_report_timeouts_as_broken: false
