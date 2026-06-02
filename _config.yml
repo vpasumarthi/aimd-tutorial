@@ -9,6 +9,7 @@ execute:
 exclude_patterns:
   - CLAUDE.md
   - AGENTS.md
+  - ROADMAP.md
 
 repository:
   url: https://github.com/vpasumarthi/aimd-tutorial

@@ -1,0 +1,115 @@
+name: Tutorial task
+description: Track a roadmap-backed task for the AIMD Jupyter Book tutorial
+title: "[Area] Short task title"
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for roadmap tasks from ROADMAP.md. Keep scope practical and verify whether a task affects build, notebook execution, public docs, or portfolio integration.
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: P0 blocks publication, trust, build/deploy, or basic notebook usability.
+      options:
+        - P0
+        - P1
+        - P2
+        - P3
+    validations:
+      required: true
+  - type: dropdown
+    id: size
+    attributes:
+      label: Size
+      options:
+        - S
+        - M
+        - L
+        - XL
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - build
+        - deploy
+        - docs
+        - notebooks
+        - data
+        - vasp
+        - hpc
+        - pedagogy
+        - visualization
+        - external-review
+        - portfolio
+    validations:
+      required: true
+  - type: dropdown
+    id: compute
+    attributes:
+      label: Compute fit
+      description: Helps decide whether this is manual, agent-friendly, build-heavy, network-dependent, or HPC-dependent.
+      options:
+        - none
+        - light-agent
+        - build-needed
+        - notebook-execution
+        - network-needed
+        - hpc-needed
+        - expert-review
+    validations:
+      required: false
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should be true when this is done?
+      placeholder: "Example: Each notebook either runs with included sample data or clearly explains how to obtain the required files."
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Files, notebooks, commands, or external references involved.
+      placeholder: |
+        Files:
+        - notebooks/01_bulk_water.ipynb
+        - data/bulk_water/
+        Commands:
+        - jupyter-book build .
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Observable checks for completion.
+      placeholder: |
+        - Missing data behavior is handled.
+        - Build status is reported.
+        - Notebook instructions are clear for Colab and local use.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies or blockers
+      description: Data availability, VASP licensing constraints, network access, HPC access, or related issues.
+    validations:
+      required: false
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: Commands, notebook checks, rendered-page review, or manual testing steps.
+      placeholder: |
+        - jupyter-book build .
+        - open _build/html/index.html
+        - run selected notebook cells locally or in Colab
+    validations:
+      required: false
