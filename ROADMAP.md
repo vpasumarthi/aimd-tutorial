@@ -118,11 +118,11 @@ Scope:
 - repo metadata
 
 Representative tasks:
-- P0 S: Verify `jupyter-book build .` on the current repo.
-- P0 S: Add a project README.
-- P0 S: Verify GitHub Pages deploy settings and expected public URL.
-- P0 S: Clarify in `intro.md` what needs VASP/HPC and what runs in Colab.
-- P1 S: Add basic troubleshooting for dependency install/build issues.
+- [x] P0 S: Verify `jupyter-book build .` on the current repo. (Clean build, zero warnings/errors; linkcheck passes with all external links ok.)
+- [x] P0 S: Add a project README.
+- [x] P0 S: Verify GitHub Pages deploy settings and expected public URL. (Pages live at https://vpasumarthi.github.io/aimd-tutorial/, public, HTTPS enforced, GitHub Actions workflow build from `main`.)
+- [x] P0 S: Clarify in `intro.md` what needs VASP/HPC and what runs in Colab.
+- [ ] P1 S: Add basic troubleshooting for dependency install/build issues.
 
 ### Notebook Runnability and Data
 
